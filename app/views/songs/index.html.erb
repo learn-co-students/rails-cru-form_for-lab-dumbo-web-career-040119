@@ -1,0 +1,9 @@
+<h1>List of Songs</h1>
+
+<ul>
+  <%@songs.each do |song|%>
+  <p><%=song.name %> </p>
+  <%end%>
+</ul>
+<br>
+<!-- <%= button_to "Make a new Song", new_song_path, method: :get %></p> -->
