@@ -1,0 +1,10 @@
+<h1><%= @artist.name%></h1>
+<p><%= @artist.bio%></p>
+
+<br>
+
+<%= link_to "Edit: #{@artist.name}", edit_artist_path %>
+<br>
+<%= button_to "Delete: #{@artist.name}", @artist, method: :delete %>
+<br>
+<%= button_to "Back to List", artists_path, method: :get %>

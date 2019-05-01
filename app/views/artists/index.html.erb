@@ -1,0 +1,9 @@
+<h1>List of Artists</h1>
+
+<ul>
+  <%@artists.each do |artist|%>
+  <li><%=link_to "#{artist.name.capitalize}", artist %> </li>
+  <%end%>
+</ul>
+<br>
+<%= button_to "Make a new Artist", new_artist_path, method: :get %></p>

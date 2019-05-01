@@ -1,0 +1,9 @@
+<h1>List of Genres</h1>
+
+<ul>
+  <%@genres.each do |genre|%>
+  <li><%=link_to "#{genre.name.capitalize}", genre %> </li>
+  <%end%>
+</ul>
+<br>
+<%= button_to "Make a new Genre", new_genre_path, method: :get %></p>
