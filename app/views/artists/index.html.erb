@@ -1,0 +1,11 @@
+<%= render "navigate" %> <br> 
+
+<h1>ARTISTS INDEX PAGE</h1>
+
+<% @artists.each do |artist| %> 
+  <%= link_to artist.name, artist %>
+  <%= artist.bio %>
+<% end %>
+<br>
+<%= link_to "Create a new artist", new_artist_path %>
+<br>

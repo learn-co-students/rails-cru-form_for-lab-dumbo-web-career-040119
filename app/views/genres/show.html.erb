@@ -1,0 +1,11 @@
+<%= render "navigate" %> <br> 
+
+<h1>GENRE SHOW PAGE</h1>
+
+  <%= @genre.name %>
+
+<br>
+<%= link_to "Edit #{@genre.name}", edit_genre_path(@genre) %>
+<br>
+<%= button_to "Delete #{@genre.name}", genres_path(@genre), method: :delete %>
+<br>

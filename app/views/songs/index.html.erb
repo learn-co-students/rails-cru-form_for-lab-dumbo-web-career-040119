@@ -1,0 +1,11 @@
+<%= render "navigate" %> <br> 
+
+<h1>SONGS INDEX PAGE</h1>
+
+<% @songs.each do |song| %> 
+  <%= link_to song.name, song %>
+<% end %>
+
+<br>
+<%= link_to "Create a new song", new_song_path %>
+<br>

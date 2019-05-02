@@ -1,0 +1,12 @@
+<%= render "navigate" %> <br>  
+
+<h1>ARTIST SHOW PAGE</h1>
+
+ <h1><%= @artist.name %></h1> 
+  <p><%= @artist.bio %></p>
+
+<br>
+<%= link_to "Edit #{@artist.name}", edit_artist_path(@artist) %>
+<br>
+<%= button_to "Delete #{@artist.name}", artists_path(@artist), method: :delete %>
+<br>

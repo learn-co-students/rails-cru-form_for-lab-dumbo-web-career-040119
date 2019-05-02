@@ -1,0 +1,11 @@
+<%= render "navigate" %> <br> 
+
+<h1>SONG SHOW PAGE</h1>
+
+  <%= @song.name %>
+
+<br>
+<%= link_to "Edit #{@song.name}", edit_song_path(@song) %>
+<br>
+<%= button_to "Delete #{@song.name}", songs_path(@song), method: :delete %>
+<br>
